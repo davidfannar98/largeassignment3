@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import NavLinks from '../NavLinks/NavLinks';
 
 class NavBar extends Component{
     render() {

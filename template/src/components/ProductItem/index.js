@@ -19,8 +19,8 @@ const ProductItem = ({
                 }}>
                 <h2><b>{ name }</b></h2>
                 <img src={ image }></img>
-                <button onClick={function() {addCart(id)}}>Add to cart</button>
             </Link>
+            <button onClick={function() {addCart(id)}}>Add to cart</button>
             
         </div>
 )};
