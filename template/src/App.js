@@ -5,6 +5,8 @@ import Routes from "./Routes";
 import Nav from "./components/NavBar"
 import About from "./components/About";
 import Products from "./components/Products";
+import Bundles from "./components/Bundles"
+import Cart from "./components/Cart"
 
 
 const App = () => {
@@ -14,6 +16,8 @@ const App = () => {
             <Switch>
                 <Route path="/about" component={ About }/>
                 <Route path="/products" component={ Products }/>
+                <Route path="/bundles" component = {Bundles}/>
+                <Route path="/cart" component = { Cart }/>
             </Switch>
         </div>
     );
@@ -22,14 +26,3 @@ const App = () => {
 
 export default App;
 
-/*<div className="App container">
-<Navbar fluid collapseOnSelect>
-        <Navbar.Header>
-            <Navbar.Brand>
-                <Link to="/">Scratch</Link>
-            </Navbar.Brand>
-            <Navbar.Toggle />
-        </Navbar.Header>
-    </Navbar>
-    <Routes />
-</div>*/

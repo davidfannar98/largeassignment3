@@ -1,5 +1,8 @@
 .navbar{
-     background-color: red;
+    display: flex;
+    background-color: lightblue;
+    flex-direction: row;
+    justify-content: space-between;
  }
 
 .screen{
@@ -7,8 +10,9 @@
     align-items: center;
     flex-direction: column;
 }
-.nav-links{
-    background-color: blue;
+
+.nav-item{
+
 }
 
 .App {
@@ -17,4 +21,8 @@
 
 .App .navbar-brand {
     font-weight: bold;
+}
+
+.a {
+    background-color: blue;
 }
