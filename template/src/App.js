@@ -7,6 +7,7 @@ import About from "./components/About";
 import Products from "./components/Products";
 import Cart from "./components/Cart"
 import ProductDetail from "./components/ProductDetail"
+import Bundles from "./components/Bundles"
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
                 <Route exact path="/products" component={ Products }/>
                 <Route exact path="/products/:id" component={ ProductDetail }/>
                 <Route path="/cart" component={ Cart }/>
+                <Route path="/bundles" component = {Bundles}/>
             </Switch>
         </div>
     );
@@ -26,14 +28,3 @@ const App = () => {
 
 export default App;
 
-/*<div className="App container">
-<Navbar fluid collapseOnSelect>
-        <Navbar.Header>
-            <Navbar.Brand>
-                <Link to="/">Scratch</Link>
-            </Navbar.Brand>
-            <Navbar.Toggle />
-        </Navbar.Header>
-    </Navbar>
-    <Routes />
-</div>*/
