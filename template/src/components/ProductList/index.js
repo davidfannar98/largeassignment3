@@ -1,6 +1,9 @@
 import React from 'react';
 import ProductItem from '../ProductItem'
 const ProductList = ({ products }) => {
+    if (localStorage.key(0) !== 'cart') {
+        localStorage.setItem('cart', '[]')
+    }
     return (
         <div>
             { products.map(p => 

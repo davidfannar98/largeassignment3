@@ -5,6 +5,7 @@ import Routes from "./Routes";
 import Nav from "./components/NavBar"
 import About from "./components/About";
 import Products from "./components/Products";
+import Cart from "./components/Cart"
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
             <Switch>
                 <Route path="/about" component={ About }/>
                 <Route path="/products" component={ Products }/>
+                <Route path="/cart" component={ Cart }/>
             </Switch>
         </div>
     );
