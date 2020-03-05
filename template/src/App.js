@@ -7,7 +7,7 @@ import About from "./components/About";
 import Products from "./components/Products";
 import Cart from "./components/Cart"
 import ProductDetail from "./components/ProductDetail"
-import Bundles from "./components/Bundles"
+import Bundles from "./components/Bundle"
 import Checkout from "./components/Checkout";
 import StorePickup from "./components/Pickup";
 import Delivery from "./components/Delivery"

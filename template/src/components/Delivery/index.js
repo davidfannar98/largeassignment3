@@ -2,6 +2,7 @@ import React from 'react';
 
 const Delivery = () => {
     return(
+
         <div class="checkout_form">
             <h2>Checkout</h2>
             <form>
@@ -25,11 +26,11 @@ const Delivery = () => {
                     <label >Postal code</label>
                     <input type="postal" class="form-control" placeholder="Enter postal code"/>
                 </div>
-        
+
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     )
-}
+};
 
 export default Delivery;
