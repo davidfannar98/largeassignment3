@@ -19,6 +19,6 @@ const PickUp = (props) => {
             </form>
         </div>
     )
-}
+};
 
 export default PickUp;
