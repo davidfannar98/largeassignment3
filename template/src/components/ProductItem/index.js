@@ -14,7 +14,8 @@ const ProductItem = ({
                         name: name,
                         description: description,
                         price: price,
-                        image: image
+                        image: image,
+                        id: id,
                     }
                 }}>
                 <img class="card-img-top" src={ image }></img>
@@ -29,8 +30,18 @@ const ProductItem = ({
 function addCart(id, cart) {
     var cart = JSON.parse(localStorage.getItem('cart'))
     console.log(cart)
-    if (cart[parseInt(id)] === undefined) {
+    var condition = false
+    if (cart.length == 0) {
         cart.push(id)
+    } else {
+        for (var i = 0; i < cart.length; i++) {
+            if (parseInt(id) == parseInt(cart[i])) {
+                condition = true
+            }
+        }
+        if (!condition) {
+            cart.push(id)
+        }
     }
     localStorage.setItem('cart', JSON.stringify(cart))
     console.log(localStorage)
