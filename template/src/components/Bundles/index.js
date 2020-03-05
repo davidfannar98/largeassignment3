@@ -1,5 +1,5 @@
 import React from 'react';
-import { getProducts } from '../../../../server/services/bubbleService'
+import { getBundles, getProducts } from '../../../../server/services/bubbleService'
 import ProductList from '../ProductList';
 
 
@@ -7,7 +7,7 @@ class About extends React.Component{
     render() {
         return(
             <div>
-                <p>bundles</p>
+                <h2>Bundles</h2>
             </div>
         )
     }
