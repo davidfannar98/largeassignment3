@@ -8,9 +8,9 @@ import Products from "./components/Products";
 import Cart from "./components/Cart"
 import ProductDetail from "./components/ProductDetail"
 import Bundles from "./components/Bundles"
-import Checkout from "./components/Checkout"
+import Checkout from "./components/Checkout";
+import StorePickup from "./components/Pickup";
 import Delivery from "./components/Delivery"
-import PickUp from "./components/PickUp"
 
 
 const App = () => {
@@ -24,9 +24,9 @@ const App = () => {
                     <Route exact path="/products/:id" component={ ProductDetail }/>
                     <Route path="/cart" component={ Cart }/>
                     <Route path="/bundles" component = {Bundles}/>
-                    <Route exact path="/checkout" component = { Delivery }/>
-                    <Route exact path="/checkout/delivery" component = { Checkout }/>
-                    <Route exact path="/checkout/pickup" component = { PickUp }/>
+                    <Route path="/checkout" component = { Checkout }/>
+                    <Route path="/storepickup" component = { StorePickup }/>
+                    <Route path="/delivery" component = { Delivery } />
                 </Switch>
             </div>
         </div>
