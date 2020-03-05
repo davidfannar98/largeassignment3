@@ -12,15 +12,17 @@ import Bundles from "./components/Bundles"
 
 const App = () => {
     return (
-        <div className="App">
+        <div class="App">
             <Nav />
-            <Switch>
-                <Route path="/about" component={ About }/>
-                <Route exact path="/products" component={ Products }/>
-                <Route exact path="/products/:id" component={ ProductDetail }/>
-                <Route path="/cart" component={ Cart }/>
-                <Route path="/bundles" component = {Bundles}/>
-            </Switch>
+            <div class="container">
+                <Switch>
+                    <Route path="/about" component={ About }/>
+                    <Route exact path="/products" component={ Products }/>
+                    <Route exact path="/products/:id" component={ ProductDetail }/>
+                    <Route path="/cart" component={ Cart }/>
+                    <Route path="/bundles" component = {Bundles}/>
+                </Switch>
+            </div>
         </div>
     );
 };

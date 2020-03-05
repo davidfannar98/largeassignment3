@@ -6,7 +6,7 @@ const ProductItem = ({
   id, name, description, price, image
 }) => {
     return(
-        <div> 
+        <div class="card product">
             <Link 
                 to={{
                     pathname: "/products/" + id,
@@ -17,10 +17,11 @@ const ProductItem = ({
                         image: image
                     }
                 }}>
-                <h2><b>{ name }</b></h2>
-                <img src={ image }></img>
+                <img class="card-img-top" src={ image }></img>
+                <h5 class="card-title">{ name }</h5>
+                <p class="card-text"> { price } kr.</p>
             </Link>
-            <button onClick={function() {addCart(id)}}>Add to cart</button>
+            <button class="btn btn-light" onClick={function() {addCart(id)}}>Add to cart</button>
             
         </div>
 )};
