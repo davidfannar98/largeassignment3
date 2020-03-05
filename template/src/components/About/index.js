@@ -4,7 +4,9 @@ class About extends React.Component{
     render() {
         return(
             <div>
-                We are bubblify!
+                <h1>Bubblify!</h1>
+
+                <p>We are bubblify!</p>
             </div>
         )
     }

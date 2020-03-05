@@ -6,11 +6,13 @@ const ProductDetail = (props) => {
     <div className="bg-light bubbleDetails">
         <div className="basicDetails">
             <h1 ><b>{ product.name }</b></h1>
-            <img src={ product.image }></img>
-        </div>
-        <div className="extraDetails">
             <p>{ product.description }</p>
+
+        </div>
+        <div className="productDetails">
+            <img src={ product.image }></img>
             <p>{ product.price } kr.</p>
+            <button onClick={function() {addCart(id)}}>Add to cart</button>
         </div>
     </div> 
     );
