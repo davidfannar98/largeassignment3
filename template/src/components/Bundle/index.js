@@ -1,25 +1,25 @@
 import React from 'react';
-import { getProducts } from '../../../../server/services/bubbleService'
-import ProductList from '../ProductList';
+import { getProducts, getBundles } from '../../../../server/services/bubbleService'
+import BundleList from '../BundleList';
 
 class Bundles extends React.Component{
     componentDidMount() {
         this.setState({
-            Products: getProducts()
+            bundles: getBundles()
         })
     }
-
     constructor(props) {
         super(props);
         this.state = {
-            Products: [],
+            bundles: [],
         };
     };
+
 
     render() {
         return(
             <div>
-                <ProductList products={ this.state.Products } />
+                <BundleList bundles = { this.state.bundles } />
             </div>
         )
     }
