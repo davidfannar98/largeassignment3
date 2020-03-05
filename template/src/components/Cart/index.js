@@ -1,6 +1,8 @@
 import React from 'react';
 import CartList from '../CartList';
 import { getProducts } from '../../../../server/services/bubbleService'
+import { Link } from 'react-router-dom';
+
 
 class Cart extends React.Component{
     constructor(props) {
@@ -22,7 +24,7 @@ class Cart extends React.Component{
                 <h2>Your cart:</h2>
                 <CartList products={ this.state.Products } />
                 <button class="btn btn-light" onClick={function () {localStorage.setItem('cart', '[]');window.location.reload()}}>Erase cart</button>
-                <button class="btn btn-success" > Proceed to checkout </button>
+                <Link to="/Checkout"><button class="btn btn-success" > Proceed to checkout </button></Link>
             </div>
         )
     }
